@@ -24,16 +24,20 @@ btns.forEach(function(btn){
         let styles = e.currentTarget.id;
         if (styles == 'increase') {
             count ++;
-            counter.textContent = count;
-        } else if (styles == 'decrease') {
+           }
+         else if (styles == 'decrease') {
             count --;
-            counter.textContent = count;
-        }
+           }
          else {
             count = 0
-            counter.textContent = count;
-        }
-      
+            };
+        counter.textContent = count;
+        if (count > 0) {
+            counter.style.color = "green"}
+        else if (count < 0) {
+            counter.style.color = "red"}
+        else {
+            counter.style.color = "black"}
     })
 })
 
