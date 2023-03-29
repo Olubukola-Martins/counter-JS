@@ -28,10 +28,10 @@ btns.forEach(function(btn){
         } else if (styles == 'decrease') {
             count --;
             counter.textContent = count;
-        } else if (styles == 'reset') {
-             counter.textContent = 0;
-        } else {
-            counter.textContent = 0;
+        }
+         else {
+            count = 0
+            counter.textContent = count;
         }
       
     })
